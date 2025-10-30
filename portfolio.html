@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Deportivo — Eitan Trajtman</title>
+  <meta name="description" content="Portfolio sobre deportes: proyectos, fotos, logros y contacto." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">TD</div>
+        <div>
+          <div class="brand-name">Eitan Trajtman</div>
+          <div class="brand-sub">Deportista, canotaje</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="card hero-card">
+          <h1>Portfolio deportivo — Entrenamiento, proyectos y logros</h1>
+          <p class="lead">Soy atleta de canotaje. me especializo en maraton.</p>
+          <a class="cta" href="#contact">Contactame</a>
+
+          <section id="about" class="about">
+            <h2>Sobre mí</h2>
+            <p class="muted">Entrenador con años de experiencia en alto rendimiento. Me especializo en preparación física y análisis de rendimiento.</p>
+
+            <div class="about-cards">
+              <div class="project card">
+                <h3>Especialidad</h3>
+                <p class="muted">Planificación de entrenamiento y trabajo con jóvenes deportistas.</p>
+              </div>
+
+              <div class="project card">
+                <h3>Herramientas</h3>
+                <p class="muted">GPS, análisis de vídeo, estadísticas deportivas.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="card profile">
+          <div class="avatar">ET</div>
+          <div class="profile-name">Eitan Trajtman</div>
+          <div class="muted profile-role">Atleta | Entrenador</div>
+
+          <div class="stats">
+            <div class="stat"><strong>8</strong><div class="muted">Años</div></div>
+            <div class="stat"><strong>120+</strong><div class="muted">Atletas</div></div>
+            <div class="stat"><strong>15</strong><div class="muted">Proyectos</div></div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="projects" class="section">
+        <h2>Proyectos destacados</h2>
+        <div class="grid projects-grid">
+          <article class="project">
+            <h3>Programa juvenil</h3>
+            <p class="muted">Plan de 12 meses con mejora de potencia y resistencia.</p>
+          </article>
+
+          <article class="project">
+            <h3>Colaboración multimedia</h3>
+            <p class="muted">Serie de vídeos sobre técnica y prevención de lesiones.</p>
+          </article>
+
+          <article class="project">
+            <h3>Análisis de rendimiento</h3>
+            <p class="muted">Dashboard de cargas de entrenamiento para técnicos.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- GALERÍA -->
+      <section id="gallery" class="section">
+        <h2>Galería</h2>
+        <div class="gallery">
+          <img src="file:///C:/Users/48677972/Downloads/IMG_4946.JPG" alt="Foto 1">
+          <img src="file:///C:/Users/48677972/Downloads/278fcb05-1597-4846-b64b-2435b1403f25.JPG" alt="Foto 2">
+          <img src="file:///C:/Users/48677972/Downloads/IMG_4944.JPG" alt="Foto 3">
+          <img src="file:///C:/Users/48677972/Downloads/IMG_4728.JPG" alt="Foto 4">
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <div class="card contact-card">
+          <div class="contact-form-wrap">
+            <p class="muted">Si querés preguntar algo, escribime.</p>
+            <form id="contactForm">
+              <input id="nombre" placeholder="Nombre" required>
+              <input id="email" type="email" placeholder="Correo" required>
+              <textarea id="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+
+              <div class="form-actions">
+                <button type="submit">Enviar</button>
+                <div id="formMsg" class="muted form-msg"></div>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-info card-info">
+            <h3>Datos</h3>
+            <p class="muted">Tigre, Argentina<br>Tel: +54 9 11 6470-2571<br>Email: eitantrajtman@gmail.com</p>
+            <p class="muted">Redes: @eitan.trajtman</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Eitan Trajtman — Portfolio Deportivo.</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
