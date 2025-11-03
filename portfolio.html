@@ -1,163 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio Deportivo — Eitan Trajtman</title>
-  <meta name="description" content="Portfolio sobre deportes: proyectos, fotos, logros y contacto." />
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">TD</div>
-        <div>
-          <div class="brand-name">Eitan Trajtman</div>
-          <div class="brand-sub">Deportista, canotaje</div>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio deportivo - Eitan Trajtman</title>
+    <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+    <div class="contenedor">
+        <div class="header">
+        <h1>Portfolio deportivo</h1>
+        <p>Soy atleta de canotaje, este es un deporte acuático el cual se practica en un kayak, puede ser en equipo o individual.</p>
         </div>
-      </div>
 
-      <nav>
-        <ul>
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#gallery">Galería</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="card hero-card">
-          <h1>Portfolio deportivo — Entrenamiento, proyectos y logros</h1>
-          <p class="lead">Soy atleta de canotaje. Me especializo en maratón.</p>
-          <a class="cta" href="#contact">Contactame</a>
-
-          <section id="about" class="about">
-            <h2>Sobre mí</h2>
-            <p class="muted">Entrenador con años de experiencia en alto rendimiento. Me especializo en preparación física y análisis de rendimiento.</p>
-
-            <div class="about-cards">
-              <div class="project card">
-                <h3>Especialidad</h3>
-                <p class="muted">Planificación de entrenamiento y trabajo con jóvenes deportistas.</p>
-              </div>
-
-              <div class="project card">
-                <h3>Herramientas</h3>
-                <p class="muted">GPS, análisis de vídeo, estadísticas deportivas.</p>
-              </div>
+        <div class="perfil">
+        <img src="foto.jpg" alt="Foto de Eitan Trajtman" class="foto">
+        <div class="info">
+            <h2>Eitan Trajtman</h2>
+            <div class="detalles">
+            <span>17<br>Años</span>
+            <span>Junior<br>categoría</span>
+            <span>1<br>competencias internacionales</span>
             </div>
-          </section>
+        </div>
         </div>
 
-        <aside class="card profile">
-          <div class="avatar">ET</div>
-          <div class="profile-name">Eitan Trajtman</div>
-          <div class="muted profile-role">Atleta | Entrenador</div>
-
-          <div class="stats">
-            <div class="stat"><strong>8</strong><div class="muted">Años</div></div>
-            <div class="stat"><strong>120+</strong><div class="muted">Atletas</div></div>
-            <div class="stat"><strong>15</strong><div class="muted">Proyectos</div></div>
-          </div>
-        </aside>
-      </section>
-
-      <!-- PROYECTOS -->
-      <section id="projects" class="section">
-        <h2>Proyectos destacados</h2>
-        <div class="grid projects-grid">
-          <article class="project">
-            <h3>Programa juvenil</h3>
-            <p class="muted">Plan de 12 meses con mejora de potencia y resistencia.</p>
-          </article>
-
-          <article class="project">
-            <h3>Colaboración multimedia</h3>
-            <p class="muted">Serie de vídeos sobre técnica y prevención de lesiones.</p>
-          </article>
-
-          <article class="project">
-            <h3>Análisis de rendimiento</h3>
-            <p class="muted">Dashboard de cargas de entrenamiento para técnicos.</p>
-          </article>
+        <div class="boton">
+        <button>Contactate</button>
         </div>
-      </section>
-      <!-- GALERÍA / CARRUSEL -->
-      <section id="gallery" class="section">
-        <h2>Galería</h2>
-        <div class="carousel">
-          <button class="carousel-btn prev">&#10094;</button>
-          <div class="carousel-images">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.1&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ-iw6bw8bSkxEJREA9BBqqTPajefZ-eUEbXEl1-MVajumJ7RjY949_t-h7dhyO4DcwQU36KncqWnMIUj3ch8VeOs0WGWcF4nZH-Kf7p-gptkclTdSLWpLT2Lqs&ats=2524608000000&sz=w1366-h641" alt="Foto 1">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.2&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ831HKr-O6YIT-GefYdK5CeGV9PIu--H3SEgUhSH0sOl-P-q63Z_bwrE_3-0XTux4N34kMN27VSEgZAlnSO9k7USv5Lg9N9ojY3qDXhNl9f5F6oMv1_-4Re2bM&ats=2524608000000&sz=w1366-h641" alt="Foto 2">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.3&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ8u8uxtSx2RE5eBMTZrB1UYxPTSRfjGcCLpZa_BDN-JbUGHdusZTtlhv5S41dbehSUuDc4AKQJ-z_3tZQpr6byOQSzHyxaWBCImnJWLE-XUs-Q7UNADdPVV3-o&ats=2524608000000&sz=w1366-h641" alt="Foto 3">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.4&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ-MIRCtqmZ5otjA52sOvVqQSYrgxp4fybCDGKD2tiBZNGnUqbeYTSep1Jf2qjYRFu9c_Q8pKairYeacnn6GZC3jRQrQURuBg9PE4ajBu02rwYnjn0SPR4LCIoE&ats=2524608000000&sz=w1366-h641" alt="Foto 4">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.5&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ_rsa9XnTYX2qrPd6qjO1VT1ODXCf6WnnebPk7_jGuKIEffR_q9maum1t-lfLph0YCF1pRXZ-FZdnnTdpR85ec615zDgX5oTvfXIZH5GHiiwe1WxXbg2TbNsYw&ats=2524608000000&sz=w1366-h641" alt="Foto 5">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.6&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ_6szwQK-yNPkdQ4EWn-qVRKbd0WpQbjSy_9SoqWavIGZVHxO0apk2MsI7aAjEuy4pm4SMKXybui8BEkaIOJLJX9CwF66QbUkI8n8hJ2krKPwxDiHrzyqVhD7c&ats=2524608000000&sz=w1366-h641" alt="Foto 6">
-            <img src="https://mail.google.com/mail/u/0/?ui=2&ik=87c4b5157c&attid=0.7&permmsgid=msg-a:r8601589443357970335&th=19a34d34657a6cc5&view=fimg&disp=thd&attbid=ANGjdJ--GCmZ7hvX9idhuW5sIZAF0SHIlx45oaBdr1498zOsOmcag-9xYI33ltf0WFuCXQeVnJoLlgPPTXBI96rvD94vuDf2xa7LI4dj90lHhPswYuz176-DrGRaUkU&ats=2524608000000&sz=w1366-h641" alt="Foto 7">
-          </div>
-          <button class="carousel-btn next">&#10095;</button>
+
+        <div class="icono">
+        <img src="icono-kayak.png" alt="Icono de kayak">
         </div>
-      </section>
-      <!-- CONTACTO -->
-      <section id="contact" class="section">
-        <h2>Contacto</h2>
-        <div class="card contact-card">
-          <div class="contact-form-wrap">
-            <p class="muted">Si querés preguntar algo, escribime.</p>
-            <form id="contactForm">
-              <input id="nombre" placeholder="Nombre" required>
-              <input id="email" type="email" placeholder="Correo" required>
-              <textarea id="mensaje" rows="4" placeholder="Mensaje" required></textarea>
 
-              <div class="form-actions">
-                <button type="submit">Enviar</button>
-                <div id="formMsg" class="muted form-msg"></div>
-              </div>
-            </form>
-          </div>
-
-          <div class="contact-info card-info">
-            <h3>Datos</h3>
-            <p class="muted">Tigre, Argentina<br>Tel: +54 9 11 6470-2571<br>Email: eitantrajtman@gmail.com</p>
-            <p class="muted">Redes: @eitan.trajtman</p>
-          </div>
+        <div class="sobre-mi">
+        <h3>Sobre mi</h3>
+        <p>
+            Soy Eitan Trajtman del club Náutico Hacoaj.<br>
+            Tengo 17 años y me dedico al canotaje desde los 10 años.<br>
+            En el 2025 fui campeón argentino en la especialidad maratón y maratón short en la categoría junior, luego en el mes de abril en el selectivo de maratón que se realizó en Concepción del Uruguay (Entre Ríos) clasifiqué al mundial de canotaje en tres disciplinas (k1 long, k2 long y k1 short).<br>
+            Éste se realizó en Hungría, Gyor.
+        </p>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <small>© <span id="year"></span> Eitan Trajtman — Portfolio Deportivo.</small>
-    </footer>
-  </div>
+        <!-- NUEVA SECCIÓN -->
+        <div class="proyectos">
+        <h3>Proyectos destacados sobre mi</h3>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+        <div class="tarjetas">
+            <div class="tarjeta">
+            <img src="foto1.jpg" alt="Mundial Gyor">
+            <p>Del 4 al 7 septiembre del 2025 corrí el mundial de maratón en Gyor, Hungría el cual quedé 10 del mundo en k2 y 17 del mundo en k1.</p>
+            </div>
 
-    // --- SLIDER ---
-    const slides = document.querySelectorAll('.slides img');
-    let index = 0;
+            <div class="tarjeta">
+            <img src="foto2.jpg" alt="Campeonato Argentino">
+            <p>Del 10 al 12 de febrero del 2025 se realizó el campeonato argentino de maratón en el cual quedé primero en el k1 long y short.</p>
+            </div>
 
-    function showSlide(i) {
-      slides.forEach((slide, idx) => {
-        slide.classList.toggle('active', idx === i);
-      });
-    }
-
-    document.querySelector('.next').addEventListener('click', () => {
-      index = (index + 1) % slides.length;
-      showSlide(index);
-    });
-
-    document.querySelector('.prev').addEventListener('click', () => {
-      index = (index - 1 + slides.length) % slides.length;
-      showSlide(index);
-    });
-  </script>
-</body>
+            <div class="tarjeta">
+            <img src="foto3.jpg" alt="Selectivo Nacional">
+            <p>Del 10 al 14 de abril del 2025 se corrió el selectivo nacional para clasificar al mundial, en el cual quedé primero en el k1 largo, segundo en el k1 corto y cuarto en el k2.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </body>
 </html>
