@@ -1,134 +1,207 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #9F6E4C;
-    color: white;
-  }
-  
-  .contenedor {
-    width: 80%;
-    margin: 40px auto;
-    text-align: center;
-  }
-  
-  .header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .header p {
-    width: 70%;
-    margin: 0 auto 20px auto;
-    line-height: 1.6;
-  }
-  
-  .perfil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-top: 20px;
-  }
-  
-  .foto {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-  }
-  
-  .info h2 {
-    margin: 5px 0;
-    font-size: 1.2em;
-  }
-  
-  .detalles {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 0.9em;
-  }
-  
-  .detalles span {
-    display: block;
-    line-height: 1.3;
-  }
-  
-  .boton button {
-    background-color: #D96C00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  .boton button:hover {
-    background-color: #c05d00;
-  }
-  
-  .icono img {
-    width: 120px;
-    margin-top: 10px;
-  }
-  
-  .sobre-mi {
-    margin-top: 30px;
-    text-align: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .sobre-mi h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-  
-  .sobre-mi p {
-    line-height: 1.5;
-    font-size: 1em;
-  }
-  
-  /* --- NUEVA SECCIÓN DE PROYECTOS --- */
-  
-  .proyectos {
-    margin-top: 50px;
-  }
-  
-  .proyectos h3 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-  }
-  
-  .tarjetas {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .tarjeta {
-    background-color: #8C5F42;
-    border-radius: 10px;
-    padding: 10px;
-    width: 250px;
-    text-align: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
-  
-  .tarjeta img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .tarjeta p {
-    font-size: 0.95em;
-    line-height: 1.4;
-  }
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9F6E4C;
+  color: white;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  width: 70%;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.info h2 {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.detalles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+.detalles span {
+  display: block;
+  line-height: 1.3;
+}
+
+.boton button {
+  background-color: #D96C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.boton button:hover {
+  background-color: #c05d00;
+}
+
+.icono img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.sobre-mi {
+  margin-top: 30px;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre-mi h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.sobre-mi p {
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+/* --- NUEVA SECCIÓN DE PROYECTOS --- */
+
+.proyectos {
+  margin-top: 50px;
+}
+
+.proyectos h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center; /* 🔹 Alinea en una sola línea */
+  align-items: flex-start;
+  gap: 30px; /* Espaciado entre las tarjetas */
+  flex-wrap: nowrap; /* 🔹 No se bajan de línea */
+  overflow-x: auto; /* 🔹 Permite verlas si la pantalla es chica */
+  padding-bottom: 10px;
+}
+
+.tarjeta {
+  background-color: #8B9B9E; /* 🔹 Color igual al resto */
+  border-radius: 10px;
+  padding: 10px;
+  width: 260px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  flex: 0 0 auto; /* 🔹 Mantiene tamaño fijo */
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right,
+    #7B9BA8 0%,
+    #7B9BA8 40%,
+    #8B9B9E 70%,
+    #9B8B7E 100%
+  );
+  color: white;
+}
+
+.tarjeta-perfil {
+  background-color: #8B9B9E; /* color solicitado */
+  border-radius: 20px;
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.perfil .foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.perfil .info {
+  text-align: center;
+}
+
+.perfil .detalles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+/* --- CONTACTO --- */
+.contacto {
+margin-top: 80px;
+padding: 40px 20px;
+background-color: #8b9b9e;
+border-radius: 15px;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contacto h3 {
+font-size: 1.6em;
+margin-bottom: 15px;
+}
+
+.contacto p {
+margin: 8px 0;
+font-size: 1.05em;
+}
