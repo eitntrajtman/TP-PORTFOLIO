@@ -224,8 +224,8 @@ font-size: 1.05em;
 /* Contenedor del carrusel */
 .carrusel-contenedor {
   display: flex;
-  width: calc(300px * 12);
-  animation: deslizar 35s linear infinite;
+  width: calc(300px * 36);
+  animation: deslizar 90s linear infinite;
   gap: 20px;
   justify-content: center;
 }
@@ -266,14 +266,6 @@ font-size: 1.05em;
     transform: translateX(-50%);
   }
 }
-
-
-
-
-
-
-
-
 
 /* --- FORMULARIO DE CONTACTO --- */
 .formulario-contacto {
@@ -334,7 +326,6 @@ font-size: 1.05em;
   background-color: #c05d00;
 }
 
-
 .mensaje-exito {
   margin-top: 15px;
   text-align: center;
@@ -342,3 +333,8 @@ font-size: 1.05em;
   font-weight: bold;
   transition: opacity 0.3s ease;
 }
+
+
+
+
+
