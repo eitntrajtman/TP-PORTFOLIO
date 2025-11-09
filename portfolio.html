@@ -116,5 +116,52 @@
         <p>Instagram: @eitan.trajtman</p>
       </div>
     </div>
+
+   
+<!-- FORMULARIO DE MENSAJE -->
+<div class="formulario-contacto">
+  <h3>Envíame un mensaje</h3>
+  <form id="contactForm">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo" required />
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+
+  <!-- Mensaje de confirmación -->
+  <p id="mensajeEnviado" class="mensaje-exito" style="display: none;">
+    ✅ ¡Mensaje enviado con éxito! Podés enviar otro si querés.
+  </p>
+</div>
+
+<!-- Script de envío -->
+<script>
+  const form = document.getElementById('contactForm');
+  const mensajeExito = document.getElementById('mensajeEnviado');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita recargar la página
+
+    // Mostrar mensaje
+    mensajeExito.style.display = 'block';
+
+    // Limpiar campos
+    form.reset();
+
+    // Ocultar el mensaje después de 5 segundos
+    setTimeout(() => {
+      mensajeExito.style.display = 'none';
+    }, 5000);
+  });
+</script>
+
+
+
   </body>
 </html>
